@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 800 500">
+  <!-- 배경 -->
+  <rect width="800" height="500" fill="#f7fafc" rx="10" ry="10"/>
+  
+  <!-- 제목 -->
+  <text x="400" y="50" font-family="'Pretendard', sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#16a34a">스마트 라이프 타운 개념도</text>
+  
+  <!-- 스마트 타운 이미지 - 중앙 원 -->
+  <circle cx="400" cy="260" r="180" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  
+  <!-- 중앙 라운드 사각형 - 주거 구역 -->
+  <rect x="320" y="180" width="160" height="160" rx="15" ry="15" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+  <text x="400" y="210" font-family="'Pretendard', sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#16a34a">스마트 홈 주거단지</text>
+  
+  <!-- 주거 아이콘 -->
+  <rect x="350" y="230" width="30" height="40" fill="#16a34a"/>
+  <polygon points="335,230 365,200 395,230" fill="#16a34a"/>
+  <rect x="390" y="230" width="30" height="40" fill="#16a34a"/>
+  <polygon points="375,230 405,200 435,230" fill="#16a34a"/>
+  
+  <!-- IoT 요소 표현 -->
+  <circle cx="370" cy="300" r="5" fill="#3b82f6"/>
+  <circle cx="390" cy="300" r="5" fill="#3b82f6"/>
+  <circle cx="410" cy="300" r="5" fill="#3b82f6"/>
+  <text x="400" y="325" font-family="'Pretendard', sans-serif" font-size="12" text-anchor="middle" fill="#4b5563">IoT 기반 스마트 홈</text>
+  
+  <!-- 제1구역: 공유 오피스 -->
+  <rect x="240" y="110" width="120" height="80" rx="10" ry="10" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="300" y="135" font-family="'Pretendard', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#3b82f6">공유 오피스</text>
+  
+  <!-- 공유 오피스 아이콘 -->
+  <rect x="270" y="145" width="20" height="25" fill="#3b82f6"/>
+  <rect x="300" y="150" width="20" height="20" fill="#3b82f6"/>
+  <text x="300" y="185" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">재택·출근 병행 공간</text>
+  
+  <!-- 제2구역: 통합 돌봄 센터 -->
+  <rect x="440" y="110" width="120" height="80" rx="10" ry="10" fill="#ffffff" stroke="#ef4444" stroke-width="2"/>
+  <text x="500" y="135" font-family="'Pretendard', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#ef4444">통합 돌봄 센터</text>
+  
+  <!-- 돌봄 센터 아이콘 -->
+  <circle cx="486" cy="155" r="10" fill="#ef4444"/>
+  <circle cx="514" cy="155" r="10" fill="#ef4444"/>
+  <path d="M486 165 Q 500 175, 514 165" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <text x="500" y="185" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">세대 통합형 돌봄 시설</text>
+  
+  <!-- 제3구역: 교육·문화 시설 -->
+  <rect x="440" y="330" width="120" height="80" rx="10" ry="10" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="500" y="355" font-family="'Pretendard', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#8b5cf6">교육·문화 시설</text>
+  
+  <!-- 교육 문화 아이콘 -->
+  <rect x="480" y="365" width="10" height="30" fill="#8b5cf6"/>
+  <rect x="495" y="370" width="10" height="25" fill="#8b5cf6"/>
+  <rect x="510" y="360" width="10" height="35" fill="#8b5cf6"/>
+  <text x="500" y="405" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">평생교육 및 문화 공간</text>
+  
+  <!-- 제4구역: 커뮤니티 시설 -->
+  <rect x="240" y="330" width="120" height="80" rx="10" ry="10" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+  <text x="300" y="355" font-family="'Pretendard', sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#f59e0b">커뮤니티 시설</text>
+  
+  <!-- 커뮤니티 아이콘 -->
+  <circle cx="285" cy="380" r="8" fill="#f59e0b"/>
+  <circle cx="300" cy="375" r="8" fill="#f59e0b"/>
+  <circle cx="315" cy="380" r="8" fill="#f59e0b"/>
+  <text x="300" y="405" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">주민 간 교류 공간</text>
+  
+  <!-- 연결선 -->
+  <path d="M320 180 L 300 190" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <path d="M480 180 L 500 190" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <path d="M320 340 L 300 330" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="3,3"/>
+  <path d="M480 340 L 500 330" fill="none" stroke="#4b5563" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <!-- 스마트 기술 요소 -->
+  <circle cx="155" cy="175" r="40" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="155" y="165" font-family="'Pretendard', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#3b82f6">원격 모니터링</text>
+  <text x="155" y="185" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">시스템</text>
+  <path d="M155 215 Q 220 250, 320 210" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <circle cx="155" cy="260" r="40" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+  <text x="155" y="250" font-family="'Pretendard', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#16a34a">스마트 홈 제어</text>
+  <text x="155" y="270" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">시스템</text>
+  <path d="M195 260 L 320 260" fill="none" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <circle cx="155" cy="345" r="40" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+  <text x="155" y="335" font-family="'Pretendard', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#f59e0b">커뮤니티 플랫폼</text>
+  <text x="155" y="355" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">서비스</text>
+  <path d="M155 385 Q 220 350, 240 370" fill="none" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <circle cx="645" cy="175" r="40" fill="#ffffff" stroke="#ef4444" stroke-width="2"/>
+  <text x="645" y="165" font-family="'Pretendard', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#ef4444">통합 돌봄 정보</text>
+  <text x="645" y="185" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">시스템</text>
+  <path d="M645 215 Q 580 250, 480 210" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <circle cx="645" cy="260" r="40" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="645" y="250" font-family="'Pretendard', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#8b5cf6">교육·문화 정보</text>
+  <text x="645" y="270" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">플랫폼</text>
+  <path d="M605 260 L 480 260" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="3,3"/>
+  
+  <circle cx="645" cy="345" r="40" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="645" y="335" font-family="'Pretendard', sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#3b82f6">스마트워크</text>
+  <text x="645" y="355" font-family="'Pretendard', sans-serif" font-size="10" text-anchor="middle" fill="#4b5563">지원 시스템</text>
+  <path d="M645 385 Q 580 350, 560 370" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3"/>
+</svg>
