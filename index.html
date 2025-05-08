@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디지털 기반 통합형 생애주기 지원 시스템</title>
+    <meta name="description" content="제2회 대한민국 인구 페스티벌(2025) 정책제안 - 디지털 기반 통합형 생애주기 지원 시스템">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 커스텀 CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts - Pretendard -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body class="font-['Pretendard'] bg-gray-50 text-gray-800">
+    <!-- 헤더 및 네비게이션 -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-baby text-blue-600 text-2xl"></i>
+                <h1 class="text-xl font-bold">디지털 기반 통합형 생애주기 지원 시스템</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="pages/background.html" class="hover:text-blue-600 transition">배경 및 필요성</a>
+                <a href="pages/cases.html" class="hover:text-blue-600 transition">국내·외 사례</a>
+                <a href="pages/proposal.html" class="hover:text-blue-600 transition">제안내용</a>
+                <a href="pages/effects.html" class="hover:text-blue-600 transition">기대효과</a>
+                <a href="pages/faq.html" class="hover:text-blue-600 transition">자주 묻는 질문</a>
+                <a href="#podcast" class="hover:text-blue-600 transition">오디오 설명</a>
+            </nav>
+            <button class="md:hidden text-gray-700" id="menuToggle">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg absolute w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="pages/background.html" class="hover:text-blue-600 transition">배경 및 필요성</a>
+                <a href="pages/cases.html" class="hover:text-blue-600 transition">국내·외 사례</a>
+                <a href="pages/proposal.html" class="hover:text-blue-600 transition">제안내용</a>
+                <a href="pages/effects.html" class="hover:text-blue-600 transition">기대효과</a>
+                <a href="pages/faq.html" class="hover:text-blue-600 transition">자주 묻는 질문</a>
+                <a href="#podcast" class="hover:text-blue-600 transition">오디오 설명</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="bg-gradient-to-r from-blue-700 to-teal-500 text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
+            <div class="md:w-1/2 pt-8 md:pt-0" data-aos="fade-right">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">디지털 기반 통합형<br>생애주기 지원 시스템</h2>
+                <p class="text-xl mb-6">인구 위기 극복을 위한 혁신적 정책 제안</p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="pages/proposal.html" class="bg-white text-blue-700 hover:bg-blue-50 px-6 py-3 rounded-lg font-semibold transition">제안 살펴보기</a>
+                    <a href="pages/background.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-6 py-3 rounded-lg font-semibold transition">문제 이해하기</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center mb-8 md:mb-0" data-aos="fade-left">
+                <img src="img/hero-image.svg" alt="생애주기 지원 시스템 일러스트레이션" class="w-4/5">
+            </div>
+        </div>
+    </section>
+
+    <!-- 핵심 요약 -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-3">저출산 위기, 새로운 접근이 필요합니다</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">10년간 130조원 투입에도 불구하고 한국의 합계출산율은 계속 하락하여 2023년 기준 0.72명으로 OECD 최저 수준입니다. 단편적 접근에서 벗어나 통합적인 해결책이 필요한 시점입니다.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 rounded-xl p-6 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">심각한 저출산 위기</h3>
+                    <p class="text-gray-600">2023년 합계출산율 0.72명은 인구 유지를 위한 대체출산율(2.1명)의 1/3 수준에 불과합니다. 이는 학령인구 감소, 생산인구 감소, 지역소멸 등 국가 지속가능성을 위협하는 위기입니다.</p>
+                </div>
+                <div class="bg-green-50 rounded-xl p-6 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-green-600 mb-4">
+                        <i class="fas fa-exclamation-triangle text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">기존 정책의 한계</h3>
+                    <p class="text-gray-600">단편적 접근, 원인과 대책의 불일치, 정책 접근성 부족, 사회문화적 변화 대응 미흡 등이 기존 저출산 정책의 주요 한계점으로 지적됩니다.</p>
+                </div>
+                <div class="bg-orange-50 rounded-xl p-6 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-orange-600 mb-4">
+                        <i class="fas fa-lightbulb text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">혁신적 해결책 필요</h3>
+                    <p class="text-gray-600">해외 성공사례에서 볼 수 있듯이 디지털 기술을 활용한 통합적 접근, 일·가정 양립 지원, 사회적 육아 인프라 구축이 저출산 극복의 핵심입니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 배경 및 필요성 -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-3">배경 및 필요성</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold mb-4">현황 및 제안배경</h3>
+                    <p class="mb-4">한국은 저출산 문제 해결을 위해 지난 10년간 130조원, 최근에는 80조원에 가까운 막대한 예산을 투입했음에도 출산율이 지속적으로 하락하고 있습니다. 2022년 합계출산율은 0.78명으로 OECD 국가 중 최저 수준에 머물고 있으며, 2023년에는 0.72명으로 더욱 하락했습니다.</p>
+                    <p class="mb-4">저출산 현상은 단순한 인구 감소 문제가 아닌 학령인구와 병역자원 부족, 생산연령인구 감소, 지역소멸 가속화 등 경제·사회 전반에 광범위한 영향을 미치며 국가의 지속가능성을 위협하는 심각한 위기로 다가오고 있습니다.</p>
+                    <div class="mt-4">
+                        <a href="pages/background.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h3 class="text-2xl font-bold mb-4">기존 정책의 한계성</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong class="font-semibold">단편적 접근:</strong> 여성개인에 초점을 맞춘 보육중심 복지정책의 틀에 갇혀, 사회 구조적 문제에 대한 통합적 접근이 부족했습니다.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong class="font-semibold">원인과 대책의 불일치:</strong> 저출산의 근본 원인(주거문제, 사교육비, 여성 경력단절, 청년 일자리, 경쟁압력과 불안 등)과 정책 접근 방법 간의 불일치가 존재했습니다.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong class="font-semibold">정책 접근성 부족:</strong> 다양한 지원 정책이 존재함에도 정보 접근성이 낮고, 복잡한 신청 절차로 인해 실효성이 떨어졌습니다.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <span><strong class="font-semibold">사회문화적 변화 대응 미흡:</strong> 결혼, 출산, 육아에 대한 인식 변화와 다양한 가족 형태 등 사회문화적 변화에 대응하지 못했습니다.</span>
+                        </li>
+                    </ul>
+                    <div class="mt-4">
+                        <a href="pages/background.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                            자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 국내외 사례 -->
+    <section id="cases" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-3">국내·외 사례</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            
+            <!-- 해외 사례 -->
+            <h3 class="text-2xl font-bold mb-6" data-aos="fade-up">해외 성공사례</h3>
+            <div class="flex justify-end mb-4" data-aos="fade-up">
+                <a href="pages/cases.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    해외 사례 자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-blue-600 mr-3"><i class="fas fa-flag text-2xl"></i></span>
+                        <h4 class="text-xl font-bold">프랑스</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><span class="font-semibold">정책 특징:</span> 가족 중심의 포괄적 지원 체계</li>
+                        <li><span class="font-semibold">주요 프로그램:</span> 가족수당 정책(3자녀의 경우 매월 271.75유로 지급), 다양한 보육 옵션, 세제 혜택</li>
+                        <li><span class="font-semibold">성과:</span> 1993년 1.66명에서 2021년 1.83명으로 출산율 회복</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <span class="text-blue-600 mr-3"><i class="fas fa-flag text-2xl"></i></span>
+                        <h4 class="text-xl font-bold">스웨덴</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><span class="font-semibold">정책 특징:</span> 성평등 기반의 가족정책</li>
+                        <li><span class="font-semibold">주요 프로그램:</span> 부모 공동 육아휴직 480일(16개월), 아동수당, 공공 보육</li>
+                        <li><span class="font-semibold">성과:</span> 1.5명 이상의 안정적인 출산율, 여성 경제활동 참가율 80% 이상</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-blue-600 mr-3"><i class="fas fa-flag text-2xl"></i></span>
+                        <h4 class="text-xl font-bold">독일</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li><span class="font-semibold">정책 특징:</span> 주거와 가족지원 정책의 연계</li>
+                        <li><span class="font-semibold">주요 프로그램:</span> 부모수당, 아동수당, 가족주택 지원 프로그램</li>
+                        <li><span class="font-semibold">성과:</span> 2005년 1.3명에서 2021년 1.5명대로 출산율 회복</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 국내 사례 -->
+            <h3 class="text-2xl font-bold mb-6" data-aos="fade-up">국내 관련 사례</h3>
+            <div class="flex justify-end mb-4" data-aos="fade-up">
+                <a href="pages/cases.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                    국내 사례 자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <span class="text-green-600 mr-3"><i class="fas fa-home text-2xl"></i></span>
+                        <h4 class="text-xl font-bold">주거 지원 정책</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>서울시 신혼부부·청년 임차보증금 이자지원 사업 확대</li>
+                        <li>다자녀 추가금리지원: 0.6%에서 최대 1.5%로 확대</li>
+                        <li>경기도 '가족친화형 스마트시티' 시범 사업</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <span class="text-green-600 mr-3"><i class="fas fa-laptop text-2xl"></i></span>
+                        <h4 class="text-xl font-bold">디지털 정부 추진</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>디지털플랫폼정부 구축 및 '국민비서' 서비스</li>
+                        <li>생애주기별 원스톱 서비스 구축</li>
+                        <li>부산시 '육아지원 통합플랫폼' 운영</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <span class="text-green-600 mr-3"><i class="fas fa-briefcase text-2xl"></i></span>
+                        <h4 class="text-xl font-bold">일·가정 양립 지원</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>육아휴직자: 2003년 6,816명에서 2017년 9만123명으로 증가</li>
+                        <li>남성 육아휴직자: 2003년 104명에서 2017년 1만2,043명으로 증가</li>
+                        <li>현대자동차 '파파프렌즈', 삼성전자 '워킹맘·대디 지원센터' 등 기업 사례</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl p-6 shadow-md border border-gray-100" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center mb-4">
+                        <span class="text-green-600 mr-3"><i class="fas fa-map-marker-alt text-2xl"></i></span>
+                        <h4 class="text-xl font-bold">지자체 혁신 사례</h4>
+                    </div>
+                    <ul class="space-y-2 text-gray-700">
+                        <li>전라남도 '아이 키우기 좋은 행복시책' - 24시간 긴급 아이돌봄센터</li>
+                        <li>강원도 '행복한 육아공동체 조성' 사업 - 마을 단위 육아 공동체</li>
+                        <li>'할매할배 육아학교' - 조부모 세대의 육아 참여 교육</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 팟캐스트 섹션 -->
+    <section id="podcast" class="py-16 bg-blue-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-3">정책 설명 오디오</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">디지털 기반 통합형 생애주기 지원 시스템에 대한 설명을 오디오로 들어보세요.</p>
+            </div>
+            
+            <div class="bg-white rounded-xl p-8 shadow-lg max-w-3xl mx-auto" data-aos="fade-up">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center">
+                        <div class="bg-blue-600 text-white rounded-full w-14 h-14 flex items-center justify-center mr-4">
+                            <i class="fas fa-podcast text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">디지털 기반 통합형 생애주기 지원 시스템</h3>
+                            <p class="text-gray-500">제2회 대한민국 인구 페스티벌(2025) 정책제안</p>
+                        </div>
+                    </div>
+                    <span class="text-gray-500" id="podcast-duration">7:38</span>
+                </div>
+                
+                <div class="bg-gray-100 rounded-lg p-4 mb-4">
+                    <audio id="podcast-audio" class="w-full" controls preload="metadata">
+                        <source src="audio/potcast.wav" type="audio/wav">
+                        브라우저가 오디오 재생을 지원하지 않습니다.
+                    </audio>
+                    <div class="mt-4">
+                        <div class="relative pt-1">
+                            <div class="flex mb-2 items-center justify-between">
+                                <div>
+                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200" id="podcast-current-time">0:00</span>
+                                </div>
+                                <div class="text-right">
+                                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-blue-600 bg-blue-200" id="podcast-total-time">7:04</span>
+                                </div>
+                            </div>
+                            <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-blue-200">
+                                <div id="podcast-progress" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-600" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-between">
+                    <button id="podcast-backward" class="bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold py-2 px-4 rounded inline-flex items-center transition">
+                        <i class="fas fa-backward mr-2"></i> 15초 뒤로
+                    </button>
+                    
+                    <button id="podcast-playback-speed" class="bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold py-2 px-4 rounded inline-flex items-center transition">
+                        <i class="fas fa-tachometer-alt mr-2"></i> 1.0x
+                    </button>
+                    
+                    <button id="podcast-forward" class="bg-blue-50 hover:bg-blue-100 text-blue-700 font-bold py-2 px-4 rounded inline-flex items-center transition">
+                        15초 앞으로 <i class="fas fa-forward ml-2"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 정책 제안 -->
+    <section id="proposal" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold mb-3">제안내용</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-4">디지털 기반 통합형 생애주기 지원 시스템은 다음 네 가지 핵심 축으로 구성된 통합적 정책 패키지입니다:</p>
+                <div class="mt-4">
+                    <a href="pages/proposal.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                        전체 제안내용 자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+                <!-- 디지털 기반 생애주기 맞춤형 지원 플랫폼 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-600 text-white p-4">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-mobile-alt text-2xl mr-3"></i>
+                            디지털 기반 생애주기 맞춤형 지원 플랫폼
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold mb-2">마이 라이프 포털(My Life Portal) 구축</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>개인별 맞춤형 정보 제공</li>
+                                <li>AI 기반 정책 매칭 시스템</li>
+                                <li>원스톱 신청 시스템</li>
+                                <li>실시간 진행 상황 확인</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold mb-2">통합 디지털 바우처 시스템</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>다목적 디지털 바우처</li>
+                                <li>모바일 기반 서비스</li>
+                                <li>사용 데이터 분석</li>
+                                <li>유연한 사용 범위</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-2">빅데이터 기반 정책 피드백 시스템</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>실시간 정책 효과 분석</li>
+                                <li>수요자 중심 정책 조정</li>
+                                <li>지역별 맞춤형 정책 개발</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 스마트 주거-일자리 연계 프로그램 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-green-600 text-white p-4">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-building text-2xl mr-3"></i>
+                            스마트 주거-일자리 연계 프로그램
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold mb-2">'스마트 라이프 타운' 조성</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>통합형 주거 단지 개발</li>
+                                <li>핵심 시설(스마트 홈, 공유 오피스, 통합 돌봄 센터 등) 구축</li>
+                                <li>스마트 기술 적용</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold mb-2">청년·신혼부부 특별 주거 지원</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>자녀 수에 따른 주택 대출 원금 탕감 제도</li>
+                                <li>장기 초저금리 대출 제도</li>
+                                <li>주거비 부담 경감</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold mb-2">지역 기반 일자리-주택 패키지</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>지역 이전 인센티브</li>
+                                <li>지역별 특화 산업 연계 일자리 창출</li>
+                                <li>스마트워크 인프라 구축</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 양육 공유경제 시스템 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-orange-500 text-white p-4">
+                        <h3 class="text-xl font-bold flex items-center">
+                            <i class="fas fa-users text-2xl mr-3"></i>
+                            양육 공유경제 시스템
+                        </h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold mb-2">'케어 셰어(Care Share)' 플랫폼 개발</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>지역 기반 돌봄 매칭 서비스</li>
+                                <li>돌봄 포인트 시스템</li>
+                                <li>신뢰 기반 시스템</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4">
+                            <h4 class="text-lg font-semibold mb-2">세대 통합형 돌봄 네트워크</h4>
+                            <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                                <li>은퇴 세대와 영유아 가정 연결</li>
+                                <li>미래 돌봄 적립 제도</li>
+                                <li>전문 역량 강화</li>
+                           </ul>
+                       </div>
+                       <div>
+                           <h4 class="text-lg font-semibold mb-2">공유 육아공간 네트워크</h4>
+                           <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                               <li>도보 10분 내 접근 가능한 공유 육아공간</li>
+                               <li>유휴 공간 활용</li>
+                               <li>디지털 관리 시스템</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+
+               <!-- 일·가정 양립 강화 프로그램 -->
+               <div class="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="400">
+                   <div class="bg-purple-600 text-white p-4">
+                       <h3 class="text-xl font-bold flex items-center">
+                           <i class="fas fa-balance-scale text-2xl mr-3"></i>
+                           일·가정 양립 강화 프로그램
+                       </h3>
+                   </div>
+                   <div class="p-6">
+                       <div class="mb-4">
+                           <h4 class="text-lg font-semibold mb-2">'워크-라이프 밸런스 2.0' 정책</h4>
+                           <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                               <li>부모 공동 육아휴직 인센티브</li>
+                               <li>시간제 육아휴직 제도</li>
+                               <li>육아기 근로시간 조정</li>
+                           </ul>
+                       </div>
+                       <div class="mb-4">
+                           <h4 class="text-lg font-semibold mb-2">경력단절 제로 프로그램</h4>
+                           <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                               <li>육아기 경력 유지 지원</li>
+                               <li>복귀 지원 시스템</li>
+                               <li>경력단절 여성 재취업 지원</li>
+                           </ul>
+                       </div>
+                       <div>
+                           <h4 class="text-lg font-semibold mb-2">가족친화 기업 문화 조성</h4>
+                           <ul class="list-disc pl-5 text-gray-700 space-y-1">
+                               <li>가족친화 기업 인증 및 세제 혜택</li>
+                               <li>일·가정 양립 문화 확산</li>
+                               <li>산업별 특화 프로그램</li>
+                           </ul>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="text-center" data-aos="fade-up">
+               <h3 class="text-2xl font-bold mb-4">추진 전략 및 단계</h3>
+               <div class="mb-4">
+                   <a href="pages/proposal.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                       추진 전략 자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+               <div class="flex flex-col md:flex-row justify-center gap-6 mt-8">
+                   <div class="bg-white rounded-lg p-6 shadow-md flex-1 max-w-sm">
+                       <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                           <span class="font-bold text-xl">1</span>
+                       </div>
+                       <h4 class="font-bold text-lg mb-2">구축 단계 (1-2년)</h4>
+                       <p class="text-gray-600">디지털 플랫폼 개발, 시범 지역 선정, 법제도 정비, 인프라 구축 준비</p>
+                   </div>
+                   <div class="bg-white rounded-lg p-6 shadow-md flex-1 max-w-sm">
+                       <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                           <span class="font-bold text-xl">2</span>
+                       </div>
+                       <h4 class="font-bold text-lg mb-2">확산 단계 (3-4년)</h4>
+                       <p class="text-gray-600">전국적 확대, 서비스 고도화, 민간 참여 활성화, 데이터 기반 정책 조정</p>
+                   </div>
+                   <div class="bg-white rounded-lg p-6 shadow-md flex-1 max-w-sm">
+                       <div class="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center mx-auto mb-4">
+                           <span class="font-bold text-xl">3</span>
+                       </div>
+                       <h4 class="font-bold text-lg mb-2">정착 단계 (5년 이후)</h4>
+                       <p class="text-gray-600">자생적 생태계 조성, 국제적 모델 확립, 저출산 극복 및 인구구조 안정화</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- 기대효과 -->
+   <section id="effects" class="py-16 bg-blue-50">
+       <div class="container mx-auto px-4">
+           <div class="text-center mb-12" data-aos="fade-up">
+               <h2 class="text-3xl font-bold mb-3">기대효과</h2>
+               <div class="w-20 h-1 bg-blue-600 mx-auto mb-4"></div>
+               <div class="mt-4">
+                   <a href="pages/effects.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                       전체 기대효과 자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+           </div>
+           
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+               <!-- 단기 효과 -->
+               <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="100">
+                   <div class="bg-blue-100 text-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                       <i class="fas fa-clock text-3xl"></i>
+                   </div>
+                   <h3 class="text-xl font-bold text-center mb-4">단기 효과 (1-3년)</h3>
+                   <ul class="space-y-3">
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">정책 접근성 향상:</strong> 디지털 플랫폼을 통한 정책 정보 접근성 및 활용도 증가</span>
+                       </li>
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">양육 부담 경감:</strong> 공유경제 시스템을 통한 육아 부담 분산 및 비용 절감</span>
+                       </li>
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">행정 효율성 증대:</strong> 디지털 플랫폼을 통한 정책 전달체계 효율화</span>
+                       </li>
+                   </ul>
+               </div>
+               
+               <!-- 중기 효과 -->
+               <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="200">
+                   <div class="bg-green-100 text-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                       <i class="fas fa-chart-line text-3xl"></i>
+                   </div>
+                   <h3 class="text-xl font-bold text-center mb-4">중기 효과 (4-6년)</h3>
+                   <ul class="space-y-3">
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">경력단절 감소:</strong> 유연한 근무환경 조성으로 일·가정 양립 가능성 향상</span>
+                       </li>
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">주거 안정성 향상:</strong> 생애주기 맞춤형 주거 지원으로 주거비 부담 경감</span>
+                       </li>
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">사회적 돌봄 체계 구축:</strong> 세대 간, 이웃 간 돌봄 공유 문화 확산</span>
+                       </li>
+                   </ul>
+               </div>
+               
+               <!-- 장기 효과 -->
+               <div class="bg-white rounded-xl p-6 shadow-md" data-aos="fade-up" data-aos-delay="300">
+                   <div class="bg-orange-100 text-orange-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                       <i class="fas fa-rocket text-3xl"></i>
+                   </div>
+                   <h3 class="text-xl font-bold text-center mb-4">장기 효과 (7-10년)</h3>
+                   <ul class="space-y-3">
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">출산율 회복:</strong> 목표: 5년 내 출산율 1.0명, 10년 내 1.5명 수준으로 단계적 회복</span>
+                       </li>
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">가족친화적 사회 구현:</strong> 일과 가정이 조화를 이루는 사회문화 정착</span>
+                       </li>
+                       <li class="flex items-start">
+                           <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                           <span><strong class="font-semibold">국가 지속가능성 강화:</strong> 인구 감소 추세 완화로 경제 활력 유지</span>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+           
+           <!-- 출산율 예상 그래프 -->
+           <div class="mt-16" data-aos="fade-up">
+               <h3 class="text-2xl font-bold text-center mb-4">출산율 회복 예상 추이</h3>
+               <div class="text-center mb-4">
+                   <a href="pages/effects.html" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium">
+                       상세 분석 자세히 보기 <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+               </div>
+               <div class="bg-white p-6 rounded-xl shadow-md">
+                   <div style="height: 300px;">
+                       <canvas id="birthRateChart"></canvas>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- 결론 및 CTA -->
+   <section class="py-16 bg-gradient-to-r from-blue-700 to-teal-500 text-white">
+       <div class="container mx-auto px-4 text-center">
+           <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">함께 만들어가는 미래, 지금 시작해야 합니다</h2>
+           <p class="text-lg max-w-3xl mx-auto mb-10" data-aos="fade-up" data-aos-delay="100">
+               저출산 문제는 단순한 현상이 아닌 우리 모두의 미래와 직결된 국가적 과제입니다. 디지털 기반 통합형 생애주기 지원 시스템은 단편적인 접근에서 벗어나 사회 전반의 혁신적 변화를 이끌어낼 것입니다.
+           </p>
+           <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+               <a href="pages/proposal.html" class="bg-white text-blue-700 hover:bg-blue-50 px-8 py-4 rounded-lg font-semibold transition">제안 자세히 보기</a>
+               <a href="pages/effects.html" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-700 px-8 py-4 rounded-lg font-semibold transition">기대효과 확인하기</a>
+           </div>
+       </div>
+   </section>
+
+   <!-- 푸터 -->
+   <footer class="bg-gray-800 text-white py-12">
+       <div class="container mx-auto px-4">
+           <div class="flex flex-col md:flex-row justify-between">
+               <div class="mb-8 md:mb-0">
+                   <h3 class="text-xl font-bold mb-4">디지털 기반 통합형 생애주기 지원 시스템</h3>
+                   <p class="text-gray-400">제2회 대한민국 인구 페스티벌(2025) 정책제안</p>
+               </div>
+               <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                   <div>
+                       <h4 class="font-semibold mb-4">메뉴</h4>
+                       <ul class="space-y-2 text-gray-400">
+                           <li><a href="pages/background.html" class="hover:text-white transition">배경 및 필요성</a></li>
+                           <li><a href="pages/cases.html" class="hover:text-white transition">국내·외 사례</a></li>
+                           <li><a href="pages/proposal.html" class="hover:text-white transition">제안내용</a></li>
+                           <li><a href="pages/effects.html" class="hover:text-white transition">기대효과</a></li>
+                           <li><a href="pages/faq.html" class="hover:text-white transition">자주 묻는 질문</a></li>
+                       </ul>
+                   </div>
+
+                   <div>
+                       <h4 class="font-semibold mb-4">참고링크</h4>
+                       <ul class="space-y-2 text-gray-400">
+                           <li><a href="https://www.betterfuture.go.kr/" target="_blank" class="hover:text-white transition">저출산고령사회위원회</a></li>
+                           <li><a href="https://www.ppfk.or.kr/" target="_blank" class="hover:text-white transition">인구보건복지협회</a></li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+           <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
+               <p>© 2025 디지털 기반 통합형 생애주기 지원 시스템. 모든 권리 보유.</p>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Chart.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+   <!-- AOS Animation -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <!-- 커스텀 JS -->
+   <script src="js/main.js"></script>
+   
+   <!-- 팟캐스트 플레이어 JS -->
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           const audio = document.getElementById('podcast-audio');
+           const currentTimeDisplay = document.getElementById('podcast-current-time');
+           const totalTimeDisplay = document.getElementById('podcast-total-time');
+           const progressBar = document.getElementById('podcast-progress');
+           const backwardBtn = document.getElementById('podcast-backward');
+           const forwardBtn = document.getElementById('podcast-forward');
+           const speedBtn = document.getElementById('podcast-playback-speed');
+           
+           // 초기 총 시간 설정
+           audio.addEventListener('loadedmetadata', function() {
+               const totalMinutes = Math.floor(audio.duration / 60);
+               const totalSeconds = Math.floor(audio.duration % 60);
+               totalTimeDisplay.textContent = `${totalMinutes}:${totalSeconds < 10 ? '0' : ''}${totalSeconds}`;
+           });
+           
+           // 재생 시간 업데이트
+           audio.addEventListener('timeupdate', function() {
+               const currentMinutes = Math.floor(audio.currentTime / 60);
+               const currentSeconds = Math.floor(audio.currentTime % 60);
+               currentTimeDisplay.textContent = `${currentMinutes}:${currentSeconds < 10 ? '0' : ''}${currentSeconds}`;
+               
+               // 프로그레스 바 업데이트
+               const percentage = (audio.currentTime / audio.duration) * 100;
+               progressBar.style.width = `${percentage}%`;
+           });
+           
+           // 15초 뒤로 버튼
+           backwardBtn.addEventListener('click', function() {
+               audio.currentTime = Math.max(audio.currentTime - 15, 0);
+           });
+           
+           // 15초 앞으로 버튼
+           forwardBtn.addEventListener('click', function() {
+               audio.currentTime = Math.min(audio.currentTime + 15, audio.duration);
+           });
+           
+           // 재생 속도 버튼
+           const speeds = [1.0, 1.25, 1.5, 1.75, 2.0, 0.75];
+           let currentSpeedIndex = 0;
+           
+           speedBtn.addEventListener('click', function() {
+               currentSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
+               const newSpeed = speeds[currentSpeedIndex];
+               audio.playbackRate = newSpeed;
+               speedBtn.innerHTML = `<i class="fas fa-tachometer-alt mr-2"></i> ${newSpeed}x`;
+           });
+       });
+   </script>
+</body>
+</html>
